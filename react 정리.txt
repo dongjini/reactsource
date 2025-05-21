@@ -1,0 +1,99 @@
+자바스크립트 - 웹개발 / 데스크톱 프로그램 (vscode, atom, slak 개발)
+
+자바스크립트 런타임 : 자바스크립트가 실행될 수 있는 환경
+ - 웹브라우저, node.js
+	
+ - node.js (2009년 개발) : 구글의 자바스크립트 엔진을 이용해 서버 측에서 실행이 가능하도록 만든 것
+  == spring boot 
+  npm : pakage 를 실행하는 명령어
+  yarn : npm 보다 향상됨.
+
+자바스크립트 기반의 프론트 엔드 기술
+ - Svelte, Vue, React, Angular
+
+React : 자바스크립트 기반의 라이브러리
+
+
+react 개발환경
+1. Node.js 설치 (패키지 관리 도구 npm 이 설치됨)
+ - 패키지 설치 : npm i 패키지명
+
+2. yarn 설치(선택사항) - 패키지 관리도구 / npm 보다 효율적이고 빠름
+  npm i --global yarn
+  yarn --version
+
+  yarn add 패키지명
+  yarn add tailwindcss @tailwindcss/vite
+
+3. extension 설치
+
+4 react 프로그램 생성
+  npx create-react-app 앱이름 (전통적인 방법)
+
+  vite 환경에서 react 프로그램 생성
+
+  yarn create vite
+
+  yarn create vite 앱이름 --template react
+
+5. 프로젝트 구조
+  pakage.json : Node 기반 프로젝트는 가지고 있음 == pom.xml
+  eslint.config.js : 자바스크립트 문법검사(eslint) 도구의 환경설정 파일
+  vite.config.js : vite 환경설정파일
+
+
+*명령어
+  yarn dev : 작성하는 코드 실시간 반영확인하며 페이지 개발
+   o + enter to open in browser  
+   q + enter to quit
+   c + enter to clear console 
+   r + enter to restart the server
+
+yarn build : 개발된 코드들을 하나로 합쳐서 서비스 할 수 있는 상태로 만들어 줌
+  dist 폴더 생성됨
+  src 폴더 안 jsx 파일들을 번들러를(묶어주는 개념) 이용해 최적화 작업을 하게 됨
+
+yarn preview : 미리보기(서버에 배포된 후 실행결과 보기)
+
+
+==================================================================================
+
+컴포넌트는 대문자로 생성
+
+jsx 문법 
+     - 자바스크립트 확장 문법
+     - 브라우저에서 실행되기 전에 코드가 번들링 되는 과정에서 바벨(자바스크립트 문법으로 변환)을 사용하여 일반
+       자바스트립트 코드로 변환됨.
+
+     - {} 사용 : 변수 출력
+     - 하나의 태그로 만들어서 보낸다.
+     - if 문 대신에 조건부 연산자 : 조건 ? 참 : 거짓
+     - && 를 사용한 조건부 렌더링(참인 경우에만 동작)
+     - ?? or || : null or undefined 인 경우 뒤에 오는 값 반환
+        <p>name : {name ?? <em>No Name</em>}</p>
+     
+     - ?? : 비어있는 문자열은 처리 안해줌
+       || : 비어있는 문자열 처리 가능
+
+     - style 
+         1) ~~.css : import 사용
+         2) JSX 안에서 스타일 선언
+         3) inline 방식 : <div style={{color: "red", fontSize:"25px"}}> 홍길동 </div>
+         4) CSS Module : 컴포넌트마다 스타일 클래스명이 중첩되는 걸 방지
+
+-----------------------------------------------------
+
+props : properties 줄인말
+        컴보넌트들 사이 데이터를 전달 시 사용
+        부모 => 자식 
+        <App name="홍길동"/>
+        <App name="홍길동">내용</App>
+
+children : 컴포넌트 태그 사이의 내용 보여주기
+     외부의 레이아웃 컴포넌트 구성한 뒤 내용을 자유롭게 채울 때 사용
+
+--------------------------------------------------------
+
+state
+
+
