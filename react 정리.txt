@@ -15,31 +15,34 @@ React : 자바스크립트 기반의 라이브러리
 
 
 react 개발환경
-1. Node.js 설치 (패키지 관리 도구 npm 이 설치됨)
- - 패키지 설치 : npm i 패키지명
+   1. Node.js 설치 (패키지 관리 도구 npm 이 설치됨)
+     - 패키지 설치 : npm i 패키지명
 
-2. yarn 설치(선택사항) - 패키지 관리도구 / npm 보다 효율적이고 빠름
-  npm i --global yarn
-  yarn --version
+   2. yarn 설치(선택사항) - 패키지 관리도구 / npm 보다 효율적이고 빠름
+     npm i --global yarn
+     yarn --version
 
-  yarn add 패키지명
-  yarn add tailwindcss @tailwindcss/vite
+     yarn add 패키지명
+     yarn add tailwindcss @tailwindcss/vite
 
-3. extension 설치
+     yarn add react-icons
+     yarn add axios
 
-4 react 프로그램 생성
-  npx create-react-app 앱이름 (전통적인 방법)
+   3. extension 설치
 
-  vite 환경에서 react 프로그램 생성
+   4 react 프로그램 생성
+     npx create-react-app 앱이름 (전통적인 방법)
 
-  yarn create vite
+     vite 환경에서 react 프로그램 생성
 
-  yarn create vite 앱이름 --template react
+     yarn create vite
 
-5. 프로젝트 구조
-  pakage.json : Node 기반 프로젝트는 가지고 있음 == pom.xml
-  eslint.config.js : 자바스크립트 문법검사(eslint) 도구의 환경설정 파일
-  vite.config.js : vite 환경설정파일
+     yarn create vite 앱이름 --template react
+
+   5. 프로젝트 구조
+     pakage.json : Node 기반 프로젝트는 가지고 있음 == pom.xml
+     eslint.config.js : 자바스크립트 문법검사(eslint) 도구의 환경설정 파일
+     vite.config.js : vite 환경설정파일
 
 
 *명령어
@@ -110,5 +113,9 @@ use~~~~~ : hook
 재렌더링 : useStatus()
    - 부모가 재렌더링 시 자식도 재렌더링 됨
    - 자식이 제렌더링 된다고 해도 부모는 재렌더링 되지 않음
+
+----------------------------------------------------------
+
+
 
 
