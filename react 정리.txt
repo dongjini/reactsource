@@ -22,11 +22,12 @@ react 개발환경
      npm i --global yarn
      yarn --version
 
+
      yarn add 패키지명
      yarn add tailwindcss @tailwindcss/vite
-
      yarn add react-icons
      yarn add axios
+     yarn add react-router-dom
 
    3. extension 설치
 
